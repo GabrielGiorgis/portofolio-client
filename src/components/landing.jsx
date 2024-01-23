@@ -27,7 +27,7 @@ function Title(){
 	// Conection with server and send email
 	const sendMail = async (dataForm) => {
 		try {
-			const response = await fetch('https://wakeful-hill-lyric.glitch.me/',{
+			const response = await fetch('https://wakeful-hill-lyric.glitch.me/mail',{
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
