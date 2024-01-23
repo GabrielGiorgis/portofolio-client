@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+    /* Button Title */
+    .text .description {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* HEADER */
+    .header .menu-pc *{
+        display: none;
+    }
+    .menu button{
+        display: flex;
+    }
+
+    /* IMG TITLE */
+    .title-content{
+        flex-direction: column;
+        padding-top: 7vh;
+    }
+}

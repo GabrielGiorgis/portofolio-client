@@ -1,0 +1,29 @@
+:root {
+  font-family: 'Helvetica Now Text', sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('../fonts/Helvetica/HelveticaNowText-Regular.otf') format('opentype');
+  line-height: 1.5;
+}
+@font-face {
+  font-family: 'Helvetica Now Text ExtraBold';
+  src: url('../fonts/Helvetica/HelveticaNowText-ExtraBold.otf') format('opentype');
+  line-height: 1.5;
+}
+html{
+  scroll-behavior: smooth;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+

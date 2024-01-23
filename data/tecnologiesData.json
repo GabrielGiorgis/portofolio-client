@@ -1,0 +1,42 @@
+[
+  {
+    "class": "front",
+    "image": "/assets/logos/react.png",
+    "title": "React js"
+  },
+  {
+    "class": "back",
+    "image": "/assets/logos/node.png",
+    "title": "Node JS"
+  },
+  {
+    "class": "back",
+    "image": "/assets/logos/java.png",
+    "title": "Java"
+  },
+  {
+    "class": "front",
+    "image": "/assets/logos/javascript.png",
+    "title": "JavaScript"
+  },
+  {
+    "class": "tool",
+    "image": "/assets/logos/git.png",
+    "title": "git"
+  },
+  {
+    "class": "tool",
+    "image": "/assets/logos/github.png",
+    "title": "github"
+  },
+  {
+    "class": "back",
+    "image": "/assets/logos/django.png",
+    "title": "Django"
+  },
+  {
+    "class": "back",
+    "image": "/assets/logos/mysql.png",
+    "title": "MySQL"
+  }
+]
