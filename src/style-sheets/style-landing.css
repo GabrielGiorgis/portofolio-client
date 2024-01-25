@@ -142,8 +142,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 24px;
+    padding-top: 7vh;
+    background-color: #1A1A1A;
 }
 
 .text {
@@ -210,12 +212,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 8px;
     flex-wrap: wrap;
 }
 
 .work-item {
-    margin: 16px;
+    margin: 16px 32px;
     color: #1A1A1A;
     max-width: 40%;
     min-width: 300px;
@@ -271,7 +273,7 @@ body {
 /* About */
 .about {
     height: auto;
-    padding: 32px;
+    padding: 16px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,6 +294,10 @@ body {
     font-family: 'Helvetica Now Text';
     max-width: 600px;
     margin: 0;
+    padding: 16px 24px;
+    background-color: #5BFFB5;
+    color: #1A1A1A;
+    border-radius: 50px 50px 50px 0;
 }
 
 .about .tecnologies-container {
@@ -493,6 +499,9 @@ body {
     margin: 0 8px;
 }
 
+.footer p {
+    text-align: center;
+}
 .footer img {
     width: 32px;
 }

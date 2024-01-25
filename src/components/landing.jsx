@@ -196,15 +196,15 @@ function Footer(){
 		<div className='footer'>
 			<div className='social'>
 				<ul>
-					<li><a href='https://www.linkedin.com/in/gabriel-giorgis/'><img src={'/assets/logos/linkedin.png'} alt='linkedin' /></a></li>
-					<li><a href='https://www.linkedin.com/in/ericklujanhttps://github.com/GabrielGiorgis?tab=repositories/'><img src={'/assets/logos/github.png'} alt='github' /></a></li>
+					<li><a target='_blank' href='https://www.linkedin.com/in/gabriel-giorgis/'><img src={'/assets/logos/linkedin.png'} alt='linkedin' /></a></li>
+					<li><a target='_blank' href='https://github.com/GabrielGiorgis'><img src={'/assets/logos/github.png'} alt='github' /></a></li>
 				</ul>
 			</div>
 			<p>© 2024 Gabriel Giorgis</p>
 			<div className='contact'>
 				<ul>
-					<li><a href=''><img src={'/assets/logos/gmail.png'} alt='gmail' /></a></li>
-					<li><a href=''><img src={'/assets/logos/whatsapp.png'} alt='wsp' /></a></li>
+					<li><a target='_blank' href='mailto:gabrielgiorgis.dev@gmail.com'><img src={'/assets/logos/gmail.png'} alt='gmail' /></a></li>
+					<li><a target='_blank' href='https://wa.me/5492615617614?text=Hola,%20quisiera%20consultar%20sobre%20sus%20servicios%20y%20presupuestos.%20¡Gracias%20y%20espero%20tu%20respuesta!'><img src={'/assets/logos/whatsapp.png'} alt='wsp' /></a></li>
 				</ul>
 			</div>
 		</div>

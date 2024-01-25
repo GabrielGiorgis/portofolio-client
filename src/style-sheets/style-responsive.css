@@ -17,6 +17,7 @@
     /* IMG TITLE */
     .title-content{
         flex-direction: column;
-        padding: 0 8px;
+        padding: 0vh 8px;
+        padding-top: 7vh;
     }
 }
