@@ -40,7 +40,7 @@ function Title(){
 
 			//Show succes message
 			setIfFormSent(true);
-			setSuccesMessage('Correo enviado correctamente, en breve me pondre en contacto contigo.'); 
+			setSuccesMessage('Mail sent correctly, I will contact you shortly.'); 
 
 			//Reset form
 			emailRef.current.value = '';
