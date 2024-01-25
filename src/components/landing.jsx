@@ -1,7 +1,7 @@
 import {React, useRef, useState, useEffect} from 'react';
 import worksData from '../../data/worksData.json'; import tecnologiesData from '../../data/tecnologiesData.json'; //Data
 import '../style-sheets/style-landing.css'; import '../style-sheets/style-responsive.css'; // Styles
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; import { faBars, faHome, faUser, faLaptop } from '@fortawesome/free-solid-svg-icons'; //Icons from fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; import { faBars, faHome, faUser, faLaptop, faSpinner } from '@fortawesome/free-solid-svg-icons'; //Icons from fontawesome
 
 function Title(){
 // Functions to show and hide form
@@ -23,10 +23,13 @@ function Title(){
 	// Message status
 	const [ifFormSent, setIfFormSent] = useState(false);
 	const [succesMessage, setSuccesMessage] = useState(false);
+	const [loading, setLoading] = useState(false);
 
 	// Conection with server and send email
 	const sendMail = async (dataForm) => {
 		try {
+			setLoading(true);
+			//Send email
 			const response = await fetch('https://wakeful-hill-lyric.glitch.me/mail',{
 				method: 'POST',
 				headers: {
@@ -37,6 +40,7 @@ function Title(){
 			if(!response.ok){
 				throw new Error('Error en la solicitud del servidor');
 			}
+			setLoading(false);
 
 			//Show succes message
 			setIfFormSent(true);
@@ -83,6 +87,7 @@ function Title(){
 				<div className='close'>
 					<button className='button' onClick={hideForm}>X</button>
 				</div>
+				{loading && <p className='loading-icon'><FontAwesomeIcon icon={faSpinner} spinPulse /><span>sending</span></p>}
 				{ifFormSent && <p className='successMessage'>{succesMessage}</p>}
 				<form>
 					
