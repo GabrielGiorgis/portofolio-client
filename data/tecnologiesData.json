@@ -31,11 +31,6 @@
   },
   {
     "class": "back",
-    "image": "/assets/logos/django.png",
-    "title": "Django"
-  },
-  {
-    "class": "back",
     "image": "/assets/logos/mysql.png",
     "title": "MySQL"
   }

@@ -28,6 +28,7 @@ function Title(){
 	// Conection with server and send email
 	const sendMail = async (dataForm) => {
 		try {
+			//Loading message set on
 			setLoading(true);
 			//Send email
 			const response = await fetch('https://wakeful-hill-lyric.glitch.me/mail',{
@@ -40,6 +41,7 @@ function Title(){
 			if(!response.ok){
 				throw new Error('Error en la solicitud del servidor');
 			}
+			//Loading message set off
 			setLoading(false);
 
 			//Show succes message
