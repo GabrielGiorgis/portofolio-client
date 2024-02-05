@@ -66,8 +66,12 @@ function Title(){
 		const name = nameRef.current.value;
 		const message = messageRef.current.value;
 		const subject = subjectRef.current.value;
-		sendMail({mail, name, subject ,message});
-	}
+		if(!mail || !name || !message || !subject){
+			alert('All fields are required 😢');
+		} else (
+			sendMail({mail, name, subject ,message})
+		)
+	};
 
 	return (
 		<div id='title' className='title-content'>
@@ -93,10 +97,10 @@ function Title(){
 				</div>
 				<form>
 					
-					<input ref={nameRef} type='text' placeholder='Name' />
-					<input ref={emailRef} type='text' placeholder='Email' />
-					<input ref={subjectRef} type='text' placeholder='Subject' />
-					<textarea ref={messageRef} placeholder='Message'></textarea>
+					<input ref={nameRef} type='text' placeholder='Name'/>
+					<input ref={emailRef} type='text' placeholder='Email'/>
+					<input ref={subjectRef} type='text' placeholder='Subject'/>
+					<textarea ref={messageRef} placeholder='Message (Optional)'></textarea>
 					{!loading && <button className='button' onClick={handleSubmit}>Send</button> }
 					{/* {loading && <p className='loading-icon'><FontAwesomeIcon icon={faSpinner} spinPulse /><span>sending</span></p>} */}
 					{loading && <p className='loading-icon'>
