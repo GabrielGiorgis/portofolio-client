@@ -1,6 +1,6 @@
 import {React, useRef, useState, useEffect} from 'react';
 import worksData from '../../data/worksData.json'; import tecnologiesData from '../../data/tecnologiesData.json'; //Data
-import '../style-sheets/style-landing.css'; import '../style-sheets/style-responsive.css'; // Styles
+import '../style-sheets/style-landing.css'; import '../style-sheets/style-responsive.css'; import '../style-sheets/typewriter.css'; // Styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; import { faBars, faHome, faUser, faLaptop, faSpinner } from '@fortawesome/free-solid-svg-icons'; //Icons from fontawesome
 
 function Title(){
@@ -28,6 +28,8 @@ function Title(){
 	// Conection with server and send email
 	const sendMail = async (dataForm) => {
 		try {
+			//Success Mesagge set Off
+			setSuccesMessage('');
 			//Loading message set on
 			setLoading(true);
 			//Send email
@@ -89,15 +91,21 @@ function Title(){
 				<div className='close'>
 					<button className='button' onClick={hideForm}>X</button>
 				</div>
-				{loading && <p className='loading-icon'><FontAwesomeIcon icon={faSpinner} spinPulse /><span>sending</span></p>}
-				{ifFormSent && <p className='successMessage'>{succesMessage}</p>}
 				<form>
 					
 					<input ref={nameRef} type='text' placeholder='Name' />
 					<input ref={emailRef} type='text' placeholder='Email' />
 					<input ref={subjectRef} type='text' placeholder='Subject' />
 					<textarea ref={messageRef} placeholder='Message'></textarea>
-					<button className='button' onClick={handleSubmit}>Send</button>
+					{!loading && <button className='button' onClick={handleSubmit}>Send</button> }
+					{/* {loading && <p className='loading-icon'><FontAwesomeIcon icon={faSpinner} spinPulse /><span>sending</span></p>} */}
+					{loading && <p className='loading-icon'>
+					<div class="typewriter">
+    					<div class="slide"><i></i></div>
+    					<div class="paper"></div>
+    					<div class="keyboard"></div>
+					</div><span>sending</span></p>}
+					{ifFormSent && <p className='successMessage'>{succesMessage}</p>}
 				</form>
 			</div>
 		</div>
