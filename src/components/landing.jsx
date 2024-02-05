@@ -100,7 +100,7 @@ function Title(){
 					<input ref={nameRef} type='text' placeholder='Name'/>
 					<input ref={emailRef} type='text' placeholder='Email'/>
 					<input ref={subjectRef} type='text' placeholder='Subject'/>
-					<textarea ref={messageRef} placeholder='Message (Optional)'></textarea>
+					<textarea ref={messageRef} placeholder='Message'></textarea>
 					{!loading && <button className='button' onClick={handleSubmit}>Send</button> }
 					{/* {loading && <p className='loading-icon'><FontAwesomeIcon icon={faSpinner} spinPulse /><span>sending</span></p>} */}
 					{loading && <p className='loading-icon'>
