@@ -1,15 +1,20 @@
 [
   {
+    "image": "/assets/works/caristia.png",
+    "title": "Web Catalog",
+    "description": "Design of an online catalog so that customers can contact the user.",
+    "link": "https://comercialcaristia.com"
+  },
+  {
     "image": "/assets/works/Portada landing.png",
     "title": "Landing Pages with React JS + Vite",
-    "description": "Design and development of client-requested pages.",
+    "description": "Landing page design following customer acquisition strategies.",
     "link": "https://es.fiverr.com/s/9y71gj"
   },
   {
-    "image": "/assets/works/portada psd a html.png",
+    "image": "/assets/works/portada psd a html offer.png",
     "title": "Convert Figma or PSD to React JS",
     "description": "Translation of designs into a fully functional website.",
     "link": "https://es.fiverr.com/s/2qy4Bq"
-  }
-  
+  }  
 ]
