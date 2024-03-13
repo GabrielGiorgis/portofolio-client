@@ -194,7 +194,7 @@ function Header(){
 	return(
 		<div className='header'>
 			<div className='title-header'>
-				<p>PORTOFOLIO</p>
+				<p>PORTFOLIO</p>
 			</div>
 			<div className='menu'>
 				<ul className='menu-pc'>
